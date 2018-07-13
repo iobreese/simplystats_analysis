@@ -23,4 +23,3 @@ tidy_txt = tidy_txt %>% mutate(date = ymd(date))
 library(stringr)
 tidy_txt =tidy_txt  %>% group_by(title) %>%
   mutate(author = first(str_subset(word,"roger|jeff|rafa")))
-
